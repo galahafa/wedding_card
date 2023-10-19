@@ -96,10 +96,9 @@
     </style>
 </head>
 <body>
-<!--<audio id="myAudio" autoplay>-->
-<!--  <source src="a94a8fe5ccb19ba61c4c0873d391e987982fbbd3/img/original.mp3" type="audio/mp3">-->
-<!--  <source src="./Welcome to Kitchen Nightmares..mp3" type="audio/mpeg">-->
-<!--</audio>-->
+<audio id="myAudio" autoplay>
+  <source src="img/original.mp3" type="audio/mp3">
+</audio>
 <!--<audio src="a94a8fe5ccb19ba61c4c0873d391e987982fbbd3/img/original.mp3" autoplay></audio>-->
 <!--<audio controls autoplay>-->
 <!--  <source src="a94a8fe5ccb19ba61c4c0873d391e987982fbbd3/img/original.mp3" type="audio/ogg">-->
@@ -222,7 +221,7 @@
     function onHover() {
       confetti({
         particleCount: 150,
-        spread: 60
+        spread: 80
       });
     }
 
@@ -237,7 +236,7 @@
       // Check if the gift card is in the viewport
       if (giftCardRect.top < windowHeight && giftCardRect.bottom >= 0) {
         confetti({
-          particleCount: 150,
+          particleCount: 100,
           spread: 60
         });
       }
