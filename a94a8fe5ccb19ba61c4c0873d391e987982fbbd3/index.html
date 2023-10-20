@@ -73,37 +73,22 @@
       z-index: 2;
         font-size: 2rem;
     }
-    .gift-card-container img {
-      /*position: absolute;*/
-      /*right: 20%;*/
-      /*top: 100%;*/
-      width: 200px;
+    /*.gift-card-container img {*/
+    /*  width: 200px;*/
+    /*}*/
+@media screen and (max-width: 768px) {
+    .content {
+        width: 60%;
     }
-/*.gift-card .background-text {*/
-/*   color: #ffcc00;*/
-/*   position: absolute;*/
-/*   top: 0;*/
-/*   left: 0;*/
-/*   bottom: 0;*/
-/*   right: 0;*/
-/*   font-size: 10em;*/
-/*   z-index: -1;*/
-/*   overflow: hidden;*/
-/*}*/
+}
         .withdraw-text {
             text-align: right;
         }
     </style>
 </head>
 <body>
-<audio id="myAudio" autoplay>
-  <source src="img/original.mp3" type="audio/mp3">
-</audio>
-<!--<audio src="a94a8fe5ccb19ba61c4c0873d391e987982fbbd3/img/original.mp3" autoplay></audio>-->
-<!--<audio controls autoplay>-->
-<!--  <source src="a94a8fe5ccb19ba61c4c0873d391e987982fbbd3/img/original.mp3" type="audio/ogg">-->
-<!--&lt;!&ndash;  <source src="horse.mp3" type="audio/mpeg">&ndash;&gt;-->
-<!--Your browser does not support the audio element.-->
+<!--<audio id="myAudio" autoplay>-->
+<!--  <source src="img/original.mp3" type="audio/mp3">-->
 <!--</audio>-->
     <header>
         <h1>CONGRATULATIONS, Masha and Stepa</h1>
@@ -112,25 +97,14 @@
 
         <section class="content">
             <img src="img/5.jpg" alt="image description">
-<!--            <p>Поздравляю с днем свадьбы! Поддерживайте и цените друг друга всю жизнь, проживите ее в радости и взаимопонимании. Пусть каждый день будет счастливым и незабываемым!</p>-->
         </section>
         <section class="content">
             <img src="img/4.jpg" alt="image description">
-<!--            <p>Поздравляю с днем свадьбы! Поддерживайте и цените друг друга всю жизнь, проживите ее в радости и взаимопонимании. Пусть каждый день будет счастливым и незабываемым!</p>-->
         </section>
-<!--        <section class="content">-->
-<!--          <iframe src="https://giphy.com/embed/KASqPTdKpEUV2" width="395" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/snow-cake-KASqPTdKpEUV2"></a></p>-->
-<!--            <img src="img/animation.gif.mp4" alt="image description">-->
-<!--            <p>First photo</p>-->
-<!--        </section>-->
         <section class="content">
             <img src="img/1.jpg" alt="image description">
             <p>First photo</p>
         </section>
-<!--        <section class="content">-->
-<!--            <img src="img/2.jpg" alt="image description">-->
-<!--&lt;!&ndash;            <p>Поздравляю с днем свадьбы! Поддерживайте и цените друг друга всю жизнь, проживите ее в радости и взаимопонимании. Пусть каждый день будет счастливым и незабываемым!</p>&ndash;&gt;-->
-<!--        </section>-->
         <section class="content">
             <img src="img/2.jpg" alt="image description">
             <p>First photo</p>
@@ -143,11 +117,6 @@
             <img src="img/6.jpg" alt="image description">
             <p>First photo</p>
         </section>
-<!--        <section class="content">-->
-<!--              <img src="img/sticker1.webp" alt="image description">-->
-<!--              <p>First photo</p>-->
-<!--          </section>-->
-
         <section class="content">
             <img src="img/16.jpg" alt="image description">
             <p>First photo</p>
@@ -178,14 +147,10 @@
             <img src="img/36.jpg" alt="image description">
             <p>First photo</p>
         </section>
-
-
-          <section class="content">
-<!--            <img src="img/36.jpg" alt="image description">-->
+      <section class="content">
             <p>Wedding day</p>
         </section>
         <section class="content">
-<!--            <img src="img/36.jpg" alt="image description">-->
             <p>Our baby</p>
         </section>
     </main>
@@ -198,24 +163,11 @@
           <p>(mattress included)</p>
         </div>
       <p class="withdraw-text">to withdraw contact Dasha Damirovna</p>
-      <img src="img/bed2.png" alt="image description" >
+<!--      <img src="img/bed2.png" alt="image description" >-->
 
     </div>
-<p>
-  <button onclick="playAudio()">Play Audio</button>
-  <button onclick="pauseAudio()">Pause Audio</button>
-</p>
 
 <script type="module">
-    function playAudio() {
-    var audio = document.getElementById("myAudio");
-    audio.play();
-  }
-
-  function pauseAudio() {
-    var audio = document.getElementById("myAudio");
-    audio.pause();
-  }
     import confetti from "https://esm.run/canvas-confetti@1";
 
     function onHover() {
