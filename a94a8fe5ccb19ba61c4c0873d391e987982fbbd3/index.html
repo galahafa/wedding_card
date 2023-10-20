@@ -11,7 +11,19 @@
             margin: 0;
             padding: 0;
         }
-
+    .center-button {
+      background-color: #ffcccb;
+        color: #717783;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      margin: 20px auto;
+      position: relative;
+      font-size: 1.5rem; /* Adjust the font size to your preference */
+      display: block;
+    }
         header {
             background-color: #ffcccb;
           color: #717783;
@@ -87,75 +99,113 @@
     </style>
 </head>
 <body>
-<!--<audio id="myAudio" autoplay>-->
-<!--  <source src="img/original.mp3" type="audio/mp3">-->
-<!--</audio>-->
+<audio id="myAudio" autoplay>
+  <source src="img/original.mp3" type="audio/mp3">
+</audio>
     <header>
-        <h1>CONGRATULATIONS, Masha and Stepa</h1>
+        <h1>CONGRATULATIONS NEWLYWEDS, Masha and Stepa</h1>
     </header>
-    <main>
+<button class="center-button" id="playButton">Play</button>
+<main>
 
         <section class="content">
             <img src="img/5.jpg" alt="image description">
+            <p>MMM, delicious</p>
         </section>
         <section class="content">
             <img src="img/4.jpg" alt="image description">
+            <p>Yeah, delicious</p>
         </section>
         <section class="content">
             <img src="img/1.jpg" alt="image description">
-            <p>First photo</p>
+            <p>Watching TV</p>
+        </section>
+        <section class="content">
+            <img src="img/gif2.gif" alt="image description">
+            <p>
+                У вас сегодня торжество большое,
+                <br>
+                Поднимут тост родные и друзья.
+                <br>
+                Ведь это счастье, что теперь вас двое
+                <br>
+                Пусть будет прочной новая семья!
+            </p>
         </section>
         <section class="content">
             <img src="img/2.jpg" alt="image description">
-            <p>First photo</p>
+            <p>Our baby</p>
         </section>
         <section class="content">
             <img src="img/3.jpg" alt="image description">
-            <p>First photo</p>
+            <p>Preparing for New Year</p>
+        </section>
+        <section class="content">
+            <img src="img/gif3.gif" alt="image description">
+            <p>
+                Удивляюсь я без лести,
+                <br>
+                Повезло же как невесте!
+                <br>
+                И сдержать восторг не в силах —
+                <br>
+                Жениху как «подфартило»!
+                <br>
+                <br>
+                Мне на вас смотреть приятно,
+                <br>
+                И без слов здесь всё понятно:
+                <br>
+                Половинки вы друг друга,
+                <br>
+                А теперь семья — супруги.
+            </p>
         </section>
         <section class="content">
             <img src="img/6.jpg" alt="image description">
-            <p>First photo</p>
+            <p>Flexing at the party</p>
         </section>
         <section class="content">
             <img src="img/16.jpg" alt="image description">
-            <p>First photo</p>
+            <p>Chilling on the beach</p>
         </section>
         <section class="content">
             <img src="img/24.jpg" alt="image description">
-            <p>First photo</p>
+            <p>"I can touch my nose" - KUL</p>
         </section>
         <section class="content">
             <img src="img/28.jpg" alt="image description">
-            <p>First photo</p>
+            <p>Family photo</p>
         </section>
-              <section class="content">
+        <section class="content">
+            <img src="img/pic2.jpg" alt="image description">
+        </section>
+        <section class="content">
             <img src="img/29.jpg" alt="image description">
-            <p>First photo</p>
-        </section>        <section class="content">
+            <p>Retirement  hobby</p>
+        </section>
+        <section class="content">
             <img src="img/33.jpg" alt="image description">
-            <p>First photo</p>
-        </section>        <section class="content">
+            <p>Fashion is my profession</p>
+        </section>
+        <section class="content">
+            <img src="img/gif4.gif" alt="image description">
+        </section>
+        <section class="content">
             <img src="img/34.jpg" alt="image description">
-            <p>First photo</p>
+            <p>Sunny day, sunny us</p>
         </section>
       <section class="content">
             <img src="img/35.jpg" alt="image description">
-            <p>First photo</p>
+            <p>Vacation</p>
         </section>
             <section class="content">
             <img src="img/36.jpg" alt="image description">
-            <p>First photo</p>
-        </section>
-      <section class="content">
-            <p>Wedding day</p>
-        </section>
-        <section class="content">
-            <p>Our baby</p>
+            <p>Croatian shadows</p>
         </section>
     </main>
     <div class="gift-card-container">
-        <p>А сейчас время подарков:</p>
+        <p>It's time for the gifts:</p>
         <div class="gift-card">
           <p style="text-align: left">Gift Card</p>
           <h2>UP to CAD$1000 </h2>
@@ -188,13 +238,27 @@
       // Check if the gift card is in the viewport
       if (giftCardRect.top < windowHeight && giftCardRect.bottom >= 0) {
         confetti({
-          particleCount: 100,
+          particleCount: 10,
           spread: 60
         });
       }
     }
 
     window.addEventListener("scroll", onScroll);
+      // Get references to the audio element and the play button
+  var audio = document.getElementById("myAudio");
+  var playButton = document.getElementById("playButton");
+
+  // Add a click event listener to the play button
+  playButton.addEventListener("click", function () {
+    if (audio.paused) {
+      audio.play();
+      playButton.innerHTML = "Pause";
+    } else {
+      audio.pause();
+      playButton.innerHTML = "Play";
+    }
+  });
   </script>
 </body>
 </html>
